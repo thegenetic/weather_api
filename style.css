@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nunito&family=Playfair+Display&family=Source+Serif+4:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(241, 186, 83);
+    background: linear-gradient(121deg, rgba(241, 186, 83, 0.9837184873949579) 36%, rgba(242, 210, 23, 1) 70%);
+
+    /* font-family: 'Dongle', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Source Serif 4', serif; */
+    padding: 0px 10px;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    padding: 24px 0px;
+    background: rgb(241, 229, 83);
+    background: linear-gradient(117deg, rgba(241, 229, 83, 0.9837184873949579) 0%, rgba(254, 195, 32, 1) 70%);
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header {
+    display: grid;
+    place-items: center;
+}
+.sub-header{
+    display: flex;
+    padding: 4px;
+}
+
+.location_logo {
+    padding-right: 8px;
+}
+
+.location_logo i {
+    font-size: 20px;
+}
+
+.location_text {
+    display: flex;
+    padding-right: 8px;
+}
+
+.location_text .search-img {
+    cursor: pointer;
+}
+
+.location_text .search-img img {
+    width: 16px;
+    padding: 0;
+}
+
+input {
+    background: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    outline-style: none;
+    border-width: 1px;
+}
+
+.body {
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.location {
+    font-weight: bold;
+    font-size: 12px;
+    color: #abafb1;
+}
+
+.coordinates{
+    display: flex;
+}
+
+.coordinates p{
+    padding: 2px 4px;
+}
+
+.hide{
+    visibility: hidden!important;
+}
+.show{
+    visibility: visible!important;
+}
+
+.img {
+    display: grid;
+    place-items: center;
+}
+
+.weather-condition p {
+    font-weight: bold;
+}
+
+.temperature {
+    margin: 28px 0;
+}
+
+.temperature p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.other-details {
+    padding: 8px;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+    margin: 0px 20px;
+}
+
+li img {
+    width: 24px;
+    height: 20px;
+    padding-right: 4px;
+}
+
+li p {
+    padding-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #abafb1;
+}

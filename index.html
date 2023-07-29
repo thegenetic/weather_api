@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <!-- Weather App -->
+            <div class="header">
+                <div class="sub-header">
+                    <div class="location_logo">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="location_text">
+                        <input type="text" name="search" id="search" placeholder="Enter a location">
+                        <div class="search-img" onclick="pickLocation()">
+                            <img src="images/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="location"></div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="location hide" id="location">
+                    <div class="coordinates">
+                        <p>Lat:<span id="lat"></span></p>
+                        <p>Lon:<span id="long"></span></p>
+                    </div>
+                    <div class="city">
+                        <p><span id="city"></span></p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="images/rain.png" alt="" id="myImg">
+                </div>
+                <div class="weather-condition">
+                    <p id="weather-condition">Condition</p>
+                </div>
+                <div class="temperature">
+                    <p><span id="temperature">--</span>°c</p>
+                </div>
+                <div class="other-details">
+                    <ul>
+                        <li>
+                            <img src="images/wind.png" alt="">
+                            <p><span id="wind">--</span> km/h</p>
+                        </li>
+                        <li>
+                            <img src="images/humidity.png" alt="">
+                            <p><span id="humidity">--</span> %</p>
+                        </li>
+                        <li>
+                            <img src="images/gauge.png" alt="">
+                            <p><span id="pressure">--</span> pa</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
