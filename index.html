@@ -40,6 +40,7 @@
                 </div>
                 <div class="weather-condition">
                     <p id="weather-condition">Condition</p>
+                    <small id="description"></small>
                 </div>
                 <div class="temperature">
                     <p><span id="temperature">--</span>°c</p>
@@ -61,9 +62,34 @@
                     </ul>
                 </div>
             </div>
+            <div class="hide" id="additional-details">
+                <!-- create a h1 tag -->
+                <h4>Additional Details:</h4>
+                <div class="additional_box">
+                    <ul>
+                        <li>Min Temp:&nbsp; <span id="min_temp"></span>°c</li>
+                        <li>Max Temp:&nbsp; <span id="max_temp"></span>°c</li>
+                        <li>Feels Like:&nbsp; <span id="feels_like"></span>°c</li>
+                        <li>Sea Level:&nbsp; <span id="sea_level"></span>metres </li>
+                        <li>Ground Level:&nbsp; <span id="ground_level"></span>metres </li>
+                    </ul>
+                    <ul>
+                        <li>Visibility:&nbsp; <span id="visibility"></span></li>
+                        <li>Wind Speed:&nbsp; <span id="wind_speed"></span> metre/sec</li>
+                        <li>Wind Degree:&nbsp; <span id="wind_degree"></span> °</li>
+                        <li>Country:&nbsp; <span id="country"></span></li>
+                        <li>Timezone:&nbsp; <span id="timezone"></span></li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
+
+
     </div>
+    <footer>
+        <p>Copyright &copy;<NAME> 2023 Dipesh Paul. <a href="https://github.com/thegenetic" target="_blank">Visit my profile</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
